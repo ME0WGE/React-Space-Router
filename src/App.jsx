@@ -8,6 +8,10 @@ import Moon from "./pages/destination/Moon";
 import Mars from "./pages/destination/Mars";
 import Europa from "./pages/destination/Europa";
 import Titan from "./pages/destination/Titan";
+import Commander from "./pages/crew/Commander";
+import Specialist from "./pages/crew/Specialist";
+import Pilot from "./pages/crew/Pilot";
+import Engineer from "./pages/crew/Engineer";
 
 function App() {
   return (
@@ -23,6 +27,14 @@ function App() {
           <Route path="mars" element={<Mars />} />
           <Route path="europa" element={<Europa />} />
           <Route path="titan" element={<Titan />} />
+        </Route>
+        {/* CREW */}
+        <Route path="/crew" element={<Crew />}>
+          <Route index element={<Commander />} />
+          <Route path="commander" element={<Commander />} />
+          <Route path="specialist" element={<Specialist />} />
+          <Route path="pilot" element={<Pilot />} />
+          <Route path="engineer" element={<Engineer />} />
         </Route>
       </Routes>
     </>
