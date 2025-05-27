@@ -1,4 +1,4 @@
-import "./moon.css";
+import "./destination.css";
 import Nav from "../../components/header/Nav";
 import moon from "../../assets/destination/image-moon.webp";
 import { Link } from "react-router-dom";

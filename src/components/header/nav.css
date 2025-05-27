@@ -16,11 +16,11 @@
   content: "";
   position: absolute;
 
-  width: 450px;
+  width: 490px;
   height: 2px;
 
   top: 50%;
-  left: 10%;
+  left: 8%;
 
   background-color: white;
 }

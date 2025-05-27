@@ -1,4 +1,4 @@
-import "./mars.css";
+import "./destination.css";
 import Nav from "../../components/header/Nav";
 import titan from "../../assets/destination/image-titan.webp";
 import { Link } from "react-router-dom";

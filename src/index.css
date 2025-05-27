@@ -1,55 +1,46 @@
-/* FONTS */
-
-/* Import des polices Barlow, Barlow Condensed et Bellefair */
+/* Import des polices */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&family=Bellefair&display=swap");
 
-/* Titres principaux (SPACE, MOON, etc.) */
-h1,
-h2,
-h3,
-.planet-info > h2,
-#home-space,
-.stat-value,
-#home-explore,
-.crew-details h2,
-.crew-details h3 {
-  font-family: "Bellefair", serif;
-  font-weight: normal;
+/* VARIABLES GLOBALES */
+:root {
+  --color-primary: #d0d6f9;
+  --color-white: #ffffff;
+  --color-background: #0b0d17;
+  --color-divider: #383b4b;
+
+  --font-bellefair: "Bellefair", serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+
+  --spacing-small: 15px;
+  --spacing-medium: 30px;
+  --spacing-large: 80px;
+
+  --font-size-nav: 16px;
+  --font-size-body: 18px;
+  --font-size-title: 28px;
+  --font-size-heading: 56px;
+  --font-size-planet: 100px;
 }
 
-/* Texte standard et paragraphes */
-p,
-.planet-description,
-.crew-bio {
-  font-family: "Barlow", sans-serif;
-}
-
-/* Navigation */
-.nav-ul,
-.li-link,
-.destination-title,
-.planet-link,
-.stat-title,
-.crew-title h1 {
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-/* STYLES GLOBAUX */
+/* Reset global */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Styles de base */
 body,
 html {
   margin: 0;
   width: 100%;
   min-height: 100vh;
-  color: white;
-  background-color: #0b0d17;
+  color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 #root {
@@ -61,35 +52,68 @@ html {
   width: 100%;
 }
 
-/* STYLES DE TEXTE GLOBAUX */
-
+/* TYPOGRAPHIE */
 /* Titres principaux */
-h1 {
+h1,
+h2,
+h3,
+.planet-info > h2,
+#home-space,
+.stat-value,
+#home-explore,
+.crew-details h2,
+.crew-details h3 {
+  font-family: var(--font-bellefair);
+  font-weight: normal;
   text-transform: uppercase;
 }
 
-h2 {
-  text-transform: uppercase;
+/* Texte standard et paragraphes */
+p,
+.planet-description,
+.crew-bio {
+  font-family: var(--font-barlow);
+  line-height: 1.8;
+  color: var(--color-primary);
+  font-size: var(--font-size-body);
 }
 
-/* Styles spécifiques pour les titres de pages avec numéros */
+/* Navigation et éléments d'interface */
+.nav-ul,
+.li-link,
+.destination-title,
+.planet-link,
+.stat-title,
+.crew-title h1 {
+  font-family: var(--font-barlow-condensed);
+  letter-spacing: 2.7px;
+}
+
+/* Styles communs pour les titres de sections */
+.crew-title h1,
+.destination-title h1 {
+  font-size: var(--font-size-title);
+  letter-spacing: 4.75px;
+}
+
 .crew-title h1 span,
 .destination-title h1 span {
   color: rgba(255, 255, 255, 0.5);
-  margin-right: 15px;
+  margin-right: var(--spacing-small);
   font-weight: bold;
-  letter-spacing: 5px;
 }
 
-/* Styles pour les descriptions */
-.crew-bio,
-.planet-description {
-  line-height: 1.8;
-  color: #d0d6f9;
-  font-size: 18px;
+/* Styles communs pour les conteneurs */
+.crew-container,
+.destination-container {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Styles de navigation globaux */
+/* Navigation points */
 .nav-dot {
   width: 15px;
   height: 15px;
@@ -104,5 +128,5 @@ h2 {
 }
 
 .nav-dot.active {
-  background-color: white;
+  background-color: var(--color-white);
 }

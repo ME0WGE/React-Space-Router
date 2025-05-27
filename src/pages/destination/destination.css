@@ -3,15 +3,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   min-height: 100vh;
   width: 100%;
 }
 
+/* Section titre */
+.destination-title {
+  display: flex;
+  margin-left: 20%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Layout principal */
 .destination-main {
   display: flex;
   justify-content: space-evenly;
@@ -21,14 +28,14 @@
   display: flex;
 }
 
-/* Planet Section */
-
+/* Section planète */
 .planet-image {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin-right: 80px;
 }
 
+/* Navigation des planètes */
 .planet-nav {
   display: flex;
   list-style: none;
@@ -38,14 +45,13 @@
 }
 
 .planet-link {
-  color: #d0d6f9;
+  color: var(--color-primary);
   text-decoration: none;
-
-  font-size: 16px;
-  letter-spacing: 2.7px;
   padding-bottom: 12px;
   border-bottom: 3px solid transparent;
   transition: border-color 0.3s;
+
+  font-size: 1.5rem;
 }
 
 .planet-link:hover {
@@ -53,37 +59,35 @@
 }
 
 .planet-link.active {
-  color: white;
-  border-bottom: 3px solid white;
+  color: var(--color-white);
+  border-bottom: 3px solid var(--color-white);
 }
 
+/* Information planète */
 .planet-info {
   max-width: 445px;
+
+  font-size: 5rem;
 }
 
 .planet-info h2 {
-  font-size: 100px;
-  font-weight: 400;
-  color: white;
   margin: 0;
   margin-bottom: 14px;
 }
 
 .planet-description {
-  color: #d0d6f9;
-
-  font-size: 18px;
-  line-height: 1.8;
   margin-bottom: 54px;
 }
 
+/* Séparateur */
 .info-divider {
   border: none;
   height: 1px;
-  background-color: #383b4b;
+  background-color: var(--color-divider);
   margin-bottom: 28px;
 }
 
+/* Statistiques */
 .planet-stats {
   display: flex;
   justify-content: flex-end;
@@ -96,14 +100,13 @@
 }
 
 .stat-title {
-  font-size: 14px;
-  letter-spacing: 2.36px;
-  color: #d0d6f9;
   margin-bottom: 12px;
 }
 
 .stat-value {
-  font-size: 28px;
-  color: white;
   margin: 0;
+
+  font-size: 2rem;
+
+  font-weight: normal;
 }
