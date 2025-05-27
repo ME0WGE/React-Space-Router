@@ -10,20 +10,40 @@
 /* Logo */
 #logo {
   padding-left: 50px;
+
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+
+#logo:hover {
+  transform: scale(1.1);
 }
 /* Line between Logo & Navbar */
 .nav-container::after {
-  content: "";
+  content: "Made with ❤️ by Kamil Baldyga";
   position: absolute;
 
   width: 490px;
-  height: 2px;
+  height: 1px;
 
   top: 50%;
   left: 8%;
 
   background-color: white;
+  /* color: rgba(255, 255, 255, 0.7); */
+  /* color: #71f5e8; */
+  color: #ff6b6b;
+  /* color: #ffd700; */
+
+  font-size: 1rem;
+  text-align: center;
+
+  margin-top: 0px;
+  /* Ajout d'une bordure légère avec text-shadow */
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
+    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
+
 /* Navbar Page List */
 .nav-ul {
   display: flex;
@@ -56,3 +76,46 @@
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 38px;
 }
+
+/* Commented tooltip styles */
+/* Logo container with tooltip */
+/* .logo-container {
+  position: relative;
+  display: inline-block;
+}*/
+
+/* Logo tooltip */
+/* .logo-tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 6px;
+  white-space: nowrap;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+} */
+
+/* Triangle pointer */
+/* .logo-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+} */
+
+/* Show tooltip on hover */
+/* .logo-container:hover .logo-tooltip {
+  visibility: visible;
+  opacity: 1;
+} */

@@ -12,6 +12,9 @@ import Commander from "./pages/crew/Commander";
 import Specialist from "./pages/crew/Specialist";
 import Pilot from "./pages/crew/Pilot";
 import Engineer from "./pages/crew/Engineer";
+import Launch from "./pages/technology/Launch";
+import Spaceport from "./pages/technology/Spaceport";
+import Capsule from "./pages/technology/Capsule";
 
 function App() {
   return (
@@ -37,6 +40,12 @@ function App() {
           <Route path="engineer" element={<Engineer />} />
         </Route>
         {/* TECHNOLOGY */}
+        <Route path="/technology" element={<Technology />}>
+          <Route index element={<Launch />} />
+          <Route path="launch" element={<Launch />} />
+          <Route path="spaceport" element={<Spaceport />} />
+          <Route path="capsule" element={<Capsule />} />
+        </Route>
       </Routes>
     </>
   );

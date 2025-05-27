@@ -6,29 +6,53 @@ export default function Nav() {
   return (
     <>
       <div className="nav-container">
-        <img src={logo} alt="logo" id="logo" />
+        <a
+          href="https://www.github.com/ME0WGE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-container"
+        >
+          <img src={logo} alt="logo" id="logo" />
+          {/* <span className="logo-tooltip">Made with ❤️ by Kamil Baldyga</span> */}
+        </a>
         <ul className="nav-ul">
           <li>
-            <NavLink to={"/"} className={({ isActive }) => 
-              isActive ? "li-link active" : "li-link"}>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive ? "li-link active" : "li-link"
+              }
+            >
               00 HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/destination"} className={({ isActive }) => 
-              isActive ? "li-link active" : "li-link"}>
+            <NavLink
+              to={"/destination"}
+              className={({ isActive }) =>
+                isActive ? "li-link active" : "li-link"
+              }
+            >
               01 DESTINATION
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/crew"} className={({ isActive }) => 
-              isActive ? "li-link active" : "li-link"}>
+            <NavLink
+              to={"/crew"}
+              className={({ isActive }) =>
+                isActive ? "li-link active" : "li-link"
+              }
+            >
               02 CREW
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/technology"} className={({ isActive }) => 
-              isActive ? "li-link active" : "li-link"}>
+            <NavLink
+              to={"/technology"}
+              className={({ isActive }) =>
+                isActive ? "li-link active" : "li-link"
+              }
+            >
               03 TECHNOLOGY
             </NavLink>
           </li>
