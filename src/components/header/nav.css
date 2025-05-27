@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  margin-top: 1rem;
 }
 /* Logo */
 #logo {
@@ -30,7 +32,6 @@
   list-style: none;
 
   padding: 40px 270px;
-  margin-top: 3rem;
 
   gap: 75px;
 
