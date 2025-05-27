@@ -13,7 +13,7 @@
 /* Section titre */
 .destination-title {
   display: flex;
-  margin-left: 15%;
+  margin-left: 16%;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -65,7 +65,7 @@
 
 /* Information planète */
 .planet-info {
-  max-width: 445px;
+  max-width: 550px;
 
   font-size: 5rem;
 }
@@ -77,6 +77,8 @@
 
 .planet-description {
   margin-bottom: 54px;
+
+  font-size: 1.25rem;
 }
 
 /* Séparateur */
