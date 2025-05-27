@@ -27,8 +27,6 @@
   flex-direction: column;
 
   letter-spacing: 1px;
-
-  max-width: 450px;
 }
 /* Home Space */
 #home-space {
@@ -44,7 +42,7 @@
 }
 /* Second paragraph */
 .home-text > p:nth-of-type(2) {
-  max-width: 450px;
+  max-width: 500px;
   font-size: 1.25rem;
 }
 /* Home Explore */
