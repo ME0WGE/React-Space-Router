@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./nav.css";
 import logo from "../../assets/shared/logo.svg";
+
 
 export default function Nav() {
   return (
