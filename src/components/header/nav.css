@@ -9,15 +9,18 @@
 #logo {
   padding-left: 50px;
 }
+/* Line between Logo & Navbar */
 .nav-container::after {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 3px;
-  background-color: white;
+
+  width: 450px;
+  height: 2px;
+
   top: 50%;
-  left: 167px;
-  z-index: 1;
+  left: 10%;
+
+  background-color: white;
 }
 /* Navbar Page List */
 .nav-ul {
@@ -26,10 +29,10 @@
 
   list-style: none;
 
-  padding-right: 300px;
-  padding: 30px 300px;
+  padding: 40px 270px;
+  margin-top: 3rem;
 
-  gap: 50px;
+  gap: 75px;
 
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -41,4 +44,18 @@
   font-size: 1.5rem;
   letter-spacing: 2px;
   text-decoration: none;
+}
+/* Line under Link */
+li:nth-of-type(1)::after {
+  content: "";
+
+  position: absolute;
+
+  width: 89px;
+  height: 3px;
+
+  top: 97%;
+  left: 21.5%;
+
+  background-color: white;
 }
