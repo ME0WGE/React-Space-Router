@@ -45,45 +45,63 @@
 }
 
 .planet-link {
+  position: relative;
   color: var(--color-primary);
   text-decoration: none;
   padding-bottom: 12px;
-  border-bottom: 3px solid transparent;
-  transition: border-color 0.3s;
-
   font-size: 1.5rem;
 }
 
-.planet-link:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+.planet-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Animation hover par défaut */
+.planet-link:hover::after {
+  width: 100%;
 }
 
 /* Moon - tons bleutés glacés */
-.planet-link[href="/destination/moon"].active,
-[data-planet="moon"] .stat-value {
-  color: #d8e7ff;
-  border-bottom: 3px solid #d8e7ff;
+.planet-link[href="/destination/moon"]:hover::after {
+  background-color: #d8e7ff;
+}
+.planet-link[href="/destination/moon"].active::after {
+  width: 100%;
+  background-color: #d8e7ff;
 }
 
 /* Mars - tons rougeâtres */
-.planet-link[href="/destination/mars"].active,
-[data-planet="mars"] .stat-value {
-  color: #ff6b6b;
-  border-bottom: 3px solid #ff6b6b;
+.planet-link[href="/destination/mars"]:hover::after {
+  background-color: #ff6b6b;
+}
+.planet-link[href="/destination/mars"].active::after {
+  width: 100%;
+  background-color: #ff6b6b;
 }
 
 /* Europa - tons turquoise glacé */
-.planet-link[href="/destination/europa"].active,
-[data-planet="europa"] .stat-value {
-  color: #71f5e8;
-  border-bottom: 3px solid #71f5e8;
+.planet-link[href="/destination/europa"]:hover::after {
+  background-color: #71f5e8;
+}
+.planet-link[href="/destination/europa"].active::after {
+  width: 100%;
+  background-color: #71f5e8;
 }
 
 /* Titan - tons dorés */
-.planet-link[href="/destination/titan"].active,
-[data-planet="titan"] .stat-value {
-  color: #ffd700;
-  border-bottom: 3px solid #ffd700;
+.planet-link[href="/destination/titan"]:hover::after {
+  background-color: #ffd700;
+}
+.planet-link[href="/destination/titan"].active::after {
+  width: 100%;
+  background-color: #ffd700;
 }
 
 /* Information planète */
@@ -135,8 +153,19 @@
 
   font-weight: normal;
 }
-
-/* Retirer la bordure pour les stat-value */
-[data-planet] .stat-value {
-  border-bottom: none;
+[data-planet="moon"] h2,
+[data-value="moon"] {
+  color: #d8e7ff;
+}
+[data-planet="mars"] h2,
+[data-value="mars"] {
+  color: #ff6b6b;
+}
+[data-planet="europa"] h2,
+[data-value="europa"] {
+  color: #71f5e8;
+}
+[data-planet="titan"] h2,
+[data-value="titan"] {
+  color: #ffd700;
 }

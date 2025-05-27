@@ -55,7 +55,9 @@ export default function Mars() {
               <div className="planet-stats">
                 <div className="stat-block">
                   <p className="stat-title">EST. TRAVEL TIME</p>
-                  <p className="stat-value">9 months</p>
+                  <p className="stat-value" data-value="mars">
+                    9 months
+                  </p>
                 </div>
               </div>
             </div>

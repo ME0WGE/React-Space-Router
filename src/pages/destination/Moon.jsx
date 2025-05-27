@@ -56,7 +56,9 @@ export default function Moon() {
               <div className="planet-stats">
                 <div className="stat-block">
                   <p className="stat-title">EST. TRAVEL TIME</p>
-                  <p className="stat-value">3 DAYS</p>
+                  <p className="stat-value" data-value="moon">
+                    3 DAYS
+                  </p>
                 </div>
               </div>
             </div>

@@ -56,7 +56,7 @@ export default function Europa() {
               <div className="planet-stats">
                 <div className="stat-block">
                   <p className="stat-title">EST. TRAVEL TIME</p>
-                  <p className="stat-value">3 years</p>
+                  <p className="stat-value" data-value="europa">3 years</p>
                 </div>
               </div>
             </div>

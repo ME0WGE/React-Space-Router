@@ -56,7 +56,9 @@ export default function Titan() {
               <div className="planet-stats">
                 <div className="stat-block">
                   <p className="stat-title">EST. TRAVEL TIME</p>
-                  <p className="stat-value">7 years</p>
+                  <p className="stat-value" data-value="titan">
+                    7 years
+                  </p>
                 </div>
               </div>
             </div>
