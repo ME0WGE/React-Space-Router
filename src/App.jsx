@@ -14,7 +14,7 @@ function App() {
     <>
       <Routes>
         {/* HOME */}
-        <Route path="/React-Space-Router" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* DESTINATION */}
         <Route path="/destination" element={<Destination />}>
           {/* Page de Destination par défaut */}

@@ -9,7 +9,7 @@ export default function Nav() {
         <img src={logo} alt="logo" id="logo" />
         <ul className="nav-ul">
           <li>
-            <Link to={"/React-Space-Router"} className="li-link">
+            <Link to={"/"} className="li-link">
               00 HOME
             </Link>
           </li>
