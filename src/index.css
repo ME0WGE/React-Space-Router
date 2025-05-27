@@ -11,14 +11,22 @@ Bellefair - "SPACE" & "EXPLORE
 
 /* Barlow Condensed */
 .nav-ul,
-.destination-title {
+.destination-title,
+.planet-link,
+.planet-description,
+.stat-title {
   font-family: "Barlow Condensed", sans-serif;
 }
-#home-space {
+#home-space,
+.planet-info > h2,
+.stat-value {
   font-family: "Bellefair", sans-serif;
 }
 #home-explore {
   font-family: "Bellefair", sans-serif;
+}
+.planet-description {
+  font-family: "Barlow", sans-serif;
 }
 
 * {

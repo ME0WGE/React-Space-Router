@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 /* Line under Link */
-li:nth-of-type(1)::after {
+/* li:nth-of-type(1)::after {
   content: "";
 
   position: absolute;
@@ -59,4 +59,4 @@ li:nth-of-type(1)::after {
   left: 21.5%;
 
   background-color: white;
-}
+} */
