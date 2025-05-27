@@ -59,25 +59,29 @@
 }
 
 /* Moon - tons bleutés glacés */
-.planet-link[href="/destination/moon"].active {
+.planet-link[href="/destination/moon"].active,
+[data-planet="moon"] .stat-value {
   color: #d8e7ff;
   border-bottom: 3px solid #d8e7ff;
 }
 
 /* Mars - tons rougeâtres */
-.planet-link[href="/destination/mars"].active {
+.planet-link[href="/destination/mars"].active,
+[data-planet="mars"] .stat-value {
   color: #ff6b6b;
   border-bottom: 3px solid #ff6b6b;
 }
 
 /* Europa - tons turquoise glacé */
-.planet-link[href="/destination/europa"].active {
+.planet-link[href="/destination/europa"].active,
+[data-planet="europa"] .stat-value {
   color: #71f5e8;
   border-bottom: 3px solid #71f5e8;
 }
 
 /* Titan - tons dorés */
-.planet-link[href="/destination/titan"].active {
+.planet-link[href="/destination/titan"].active,
+[data-planet="titan"] .stat-value {
   color: #ffd700;
   border-bottom: 3px solid #ffd700;
 }
@@ -130,4 +134,9 @@
   font-size: 2rem;
 
   font-weight: normal;
+}
+
+/* Retirer la bordure pour les stat-value */
+[data-planet] .stat-value {
+  border-bottom: none;
 }

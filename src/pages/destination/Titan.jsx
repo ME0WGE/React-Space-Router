@@ -42,7 +42,7 @@ export default function Titan() {
               </li>
             </ul>
 
-            <div className="planet-info">
+            <div className="planet-info" data-planet="titan">
               <h2>TITAN</h2>
               <p className="planet-description">
                 The only moon known to have a dense atmosphere other than Earth,

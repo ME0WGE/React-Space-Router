@@ -42,7 +42,7 @@ export default function Mars() {
               </li>
             </ul>
 
-            <div className="planet-info">
+            <div className="planet-info" data-planet="mars">
               <h2>MARS</h2>
               <p className="planet-description">
                 Don’t forget to pack your hiking boots. You’ll need them to

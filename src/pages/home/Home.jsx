@@ -1,7 +1,10 @@
 import Nav from "../../components/header/Nav";
 import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       {/* Display Navbar */}
@@ -19,7 +22,7 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <div className="home-explore">
+        <div className="home-explore" onClick={() => navigate("/destination")}>
           <h3 id="home-explore">EXPLORE</h3>
         </div>
       </div>

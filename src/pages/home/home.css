@@ -48,14 +48,58 @@
 /* Home Explore */
 .home-explore {
   text-align: center;
+  cursor: pointer;
+  position: relative;
 }
+
 #home-explore {
   font-weight: normal;
   font-size: 2rem;
-
   background-color: white;
   color: black;
-
   border-radius: 50%;
-  padding: 8rem 5rem 8rem 5rem;
+  padding: 8rem 5rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+
+/* Effet de halo */
+.home-explore::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 3s infinite;
+  z-index: 1;
+}
+
+/* Hover effect */
+.home-explore:hover #home-explore {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation du halo */
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    opacity: 0.5;
+    width: 150%;
+    height: 150%;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -42,7 +42,7 @@ export default function Europa() {
               </li>
             </ul>
 
-            <div className="planet-info">
+            <div className="planet-info" data-planet="europa">
               <h2>EUROPA</h2>
               <p className="planet-description">
                 The smallest of the four Galilean moons orbiting Jupiter, Europa

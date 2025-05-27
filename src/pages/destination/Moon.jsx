@@ -42,7 +42,7 @@ export default function Moon() {
               </li>
             </ul>
 
-            <div className="planet-info">
+            <div className="planet-info" data-planet="moon">
               <h2>MOON</h2>
               <p className="planet-description">
                 See our planet as you've never seen it before. A perfect
