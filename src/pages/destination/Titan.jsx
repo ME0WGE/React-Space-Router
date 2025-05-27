@@ -21,7 +21,7 @@ export default function Titan() {
           <div className="destination-selection">
             <ul className="planet-nav">
               <li>
-                <Link to={"/destination/moon"} className="planet-link active">
+                <Link to={"/destination/moon"} className="planet-link">
                   MOON
                 </Link>
               </li>
@@ -36,7 +36,7 @@ export default function Titan() {
                 </Link>
               </li>
               <li>
-                <Link to={"/destination/titan"} className="planet-link">
+                <Link to={"/destination/titan"} className="planet-link active">
                   TITAN
                 </Link>
               </li>

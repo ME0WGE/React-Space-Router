@@ -46,17 +46,13 @@
   letter-spacing: 2px;
   text-decoration: none;
 }
-/* Line under Link */
-/* li:nth-of-type(1)::after {
-  content: "";
 
-  position: absolute;
+.li-link.active {
+  border-bottom: 3px solid white;
+  padding-bottom: 38px;
+}
 
-  width: 89px;
-  height: 3px;
-
-  top: 97%;
-  left: 21.5%;
-
-  background-color: white;
-} */
+.li-link:hover:not(.active) {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 38px;
+}

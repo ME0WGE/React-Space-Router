@@ -21,12 +21,12 @@ export default function Mars() {
           <div className="destination-selection">
             <ul className="planet-nav">
               <li>
-                <Link to={"/destination/moon"} className="planet-link active">
+                <Link to={"/destination/moon"} className="planet-link">
                   MOON
                 </Link>
               </li>
               <li>
-                <Link to={"/destination/mars"} className="planet-link">
+                <Link to={"/destination/mars"} className="planet-link active">
                   MARS
                 </Link>
               </li>

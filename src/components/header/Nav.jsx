@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./nav.css";
 import logo from "../../assets/shared/logo.svg";
 
@@ -9,24 +9,28 @@ export default function Nav() {
         <img src={logo} alt="logo" id="logo" />
         <ul className="nav-ul">
           <li>
-            <Link to={"/"} className="li-link">
+            <NavLink to={"/"} className={({ isActive }) => 
+              isActive ? "li-link active" : "li-link"}>
               00 HOME
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/destination"} className="li-link">
+            <NavLink to={"/destination"} className={({ isActive }) => 
+              isActive ? "li-link active" : "li-link"}>
               01 DESTINATION
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/crew"} className="li-link">
+            <NavLink to={"/crew"} className={({ isActive }) => 
+              isActive ? "li-link active" : "li-link"}>
               02 CREW
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/technology"} className="li-link">
+            <NavLink to={"/technology"} className={({ isActive }) => 
+              isActive ? "li-link active" : "li-link"}>
               03 TECHNOLOGY
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

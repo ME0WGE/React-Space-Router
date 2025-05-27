@@ -21,7 +21,7 @@ export default function Europa() {
           <div className="destination-selection">
             <ul className="planet-nav">
               <li>
-                <Link to={"/destination/moon"} className="planet-link active">
+                <Link to={"/destination/moon"} className="planet-link">
                   MOON
                 </Link>
               </li>
@@ -31,7 +31,7 @@ export default function Europa() {
                 </Link>
               </li>
               <li>
-                <Link to={"/destination/europa"} className="planet-link">
+                <Link to={"/destination/europa"} className="planet-link active">
                   EUROPA
                 </Link>
               </li>
