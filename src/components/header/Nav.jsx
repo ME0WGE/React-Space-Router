@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import "./nav.css";
 import logo from "../../assets/shared/logo.svg";
 
-
 export default function Nav() {
   return (
     <>
@@ -10,7 +9,7 @@ export default function Nav() {
         <img src={logo} alt="logo" id="logo" />
         <ul className="nav-ul">
           <li>
-            <Link to={"/"} className="li-link">
+            <Link to={"/React-Space-Router"} className="li-link">
               00 HOME
             </Link>
           </li>
