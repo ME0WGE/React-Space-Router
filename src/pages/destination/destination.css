@@ -58,9 +58,28 @@
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-.planet-link.active {
-  color: var(--color-white);
-  border-bottom: 3px solid var(--color-white);
+/* Moon - tons bleutés glacés */
+.planet-link[href="/destination/moon"].active {
+  color: #d8e7ff;
+  border-bottom: 3px solid #d8e7ff;
+}
+
+/* Mars - tons rougeâtres */
+.planet-link[href="/destination/mars"].active {
+  color: #ff6b6b;
+  border-bottom: 3px solid #ff6b6b;
+}
+
+/* Europa - tons turquoise glacé */
+.planet-link[href="/destination/europa"].active {
+  color: #71f5e8;
+  border-bottom: 3px solid #71f5e8;
+}
+
+/* Titan - tons dorés */
+.planet-link[href="/destination/titan"].active {
+  color: #ffd700;
+  border-bottom: 3px solid #ffd700;
 }
 
 /* Information planète */
