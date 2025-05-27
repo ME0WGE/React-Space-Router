@@ -36,15 +36,10 @@ function App() {
           <Route path="pilot" element={<Pilot />} />
           <Route path="engineer" element={<Engineer />} />
         </Route>
+        {/* TECHNOLOGY */}
       </Routes>
     </>
   );
 }
 
-{
-  /* <Route path="/crew" element={<Crew />} /> */
-}
-{
-  /* <Route path="/technology" element={<Technology />} /> */
-}
 export default App;

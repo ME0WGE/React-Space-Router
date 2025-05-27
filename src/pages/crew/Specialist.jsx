@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../../components/header/Nav";
-import "./specialist.css";
+import "./crew.css";
 import specialistImage from "../../assets/crew/image-mark-shuttleworth.webp";
 
 export default function Specialist() {

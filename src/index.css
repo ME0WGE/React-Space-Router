@@ -1,38 +1,55 @@
 /* FONTS */
-/*
-Barlow Condensed - Navbar
-*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-/* 
-Bellefair - "SPACE" & "EXPLORE
-*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* Import des polices Barlow, Barlow Condensed et Bellefair */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&family=Bellefair&display=swap");
 
-/* Barlow Condensed */
-.nav-ul,
-.destination-title,
-.planet-link,
-.planet-description,
-.stat-title {
-  font-family: "Barlow Condensed", sans-serif;
-}
-#home-space,
+/* Titres principaux (SPACE, MOON, etc.) */
+h1,
+h2,
+h3,
 .planet-info > h2,
-.stat-value {
-  font-family: "Bellefair", sans-serif;
+#home-space,
+.stat-value,
+#home-explore,
+.crew-details h2,
+.crew-details h3 {
+  font-family: "Bellefair", serif;
+  font-weight: normal;
 }
-#home-explore {
-  font-family: "Bellefair", sans-serif;
-}
-.planet-description {
+
+/* Texte standard et paragraphes */
+p,
+.planet-description,
+.crew-bio {
   font-family: "Barlow", sans-serif;
 }
 
+/* Navigation */
+.nav-ul,
+.li-link,
+.destination-title,
+.planet-link,
+.stat-title,
+.crew-title h1 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* STYLES GLOBAUX */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-color: #0b0d17;
 }
 
 #root {
@@ -40,16 +57,52 @@ Bellefair - "SPACE" & "EXPLORE
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   height: 100%;
   width: 100%;
 }
 
-body,
-html {
-  /* Default values */
-  margin: 0;
+/* STYLES DE TEXTE GLOBAUX */
 
-  width: 100%;
-  min-height: 100vh;
+/* Titres principaux */
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+/* Styles spécifiques pour les titres de pages avec numéros */
+.crew-title h1 span,
+.destination-title h1 span {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+/* Styles pour les descriptions */
+.crew-bio,
+.planet-description {
+  line-height: 1.8;
+  color: #d0d6f9;
+  font-size: 18px;
+}
+
+/* Styles de navigation globaux */
+.nav-dot {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-dot.active {
+  background-color: white;
 }

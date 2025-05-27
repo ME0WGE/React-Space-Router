@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../../components/header/Nav";
-import "./engineer.css";
+import "./crew.css";
 import engineerImage from "../../assets/crew/image-anousheh-ansari.webp";
 
 export default function Engineer() {

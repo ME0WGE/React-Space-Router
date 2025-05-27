@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../../components/header/Nav";
-import "./commander.css";
+import "./crew.css";
 import commanderImage from "../../assets/crew/image-douglas-hurley.webp";
 
 export default function Commander() {
