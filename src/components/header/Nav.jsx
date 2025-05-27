@@ -4,7 +4,7 @@ import "./nav.css";
 export default function Nav() {
   return (
     <>
-      <ul>
+      <ul className="nav-ul">
         <li>
           <Link to={"/"}>00 HOME</Link>
         </li>
