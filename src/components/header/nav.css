@@ -6,13 +6,13 @@
   position: relative;
 
   margin-top: 1rem;
+  z-index: 100;
 }
 /* Logo */
 #logo {
   padding-left: 50px;
 
   transition: transform 0.6s ease;
-  transform-origin: center;
 }
 
 #logo:hover {
@@ -24,7 +24,7 @@
   content: "";
   position: absolute;
 
-  width: 490px;
+  width: 30%;
   height: 1px;
 
   top: 50%;
@@ -75,45 +75,111 @@
   padding-bottom: 38px;
 }
 
-/* Commented tooltip styles */
-/* Logo container with tooltip */
-/* .logo-container {
-  position: relative;
-  display: inline-block;
-}*/
+/* Boutons du menu mobile */
+.burger-nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
 
-/* Logo tooltip */
-/* .logo-tooltip {
-  visibility: hidden;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  color: white;
-  text-align: center;
-  padding: 10px 15px;
-  border-radius: 6px;
-  white-space: nowrap;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s;
-} */
+  right: 30px;
+  top: 30px;
+  padding: 0;
+  z-index: 200;
 
-/* Triangle pointer */
-/* .logo-tooltip::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
-} */
+  cursor: pointer;
+}
 
-/* Show tooltip on hover */
-/* .logo-container:hover .logo-tooltip {
-  visibility: visible;
-  opacity: 1;
-} */
+/* Media Queries */
+@media (max-width: 1024px) {
+  /* -- TABLETTE SIZE-- */
+  .burger-nav-toggle {
+    display: block;
+    top: 20px;
+    right: 30px;
+  }
+
+  #logo {
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+
+  .nav-container::after {
+    display: none;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+
+    height: 100vh;
+
+    gap: 30px;
+    padding: 120px 0 0 30px;
+    inset: 0 0 0 30%;
+
+    transform: translateX(100%);
+    transition: transform 0.35s ease-out;
+  }
+
+  .nav-ul.open {
+    transform: translateX(0);
+    transition: transform 0.35s ease-out;
+  }
+
+  .li-link.active,
+  .li-link:hover:not(.active) {
+    border-right: 3px solid;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-right: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* -- MOBILE SIZE -- */
+  .burger-nav-toggle {
+    display: block;
+
+    top: 15px;
+    right: 20px;
+  }
+
+  #logo {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+
+  .nav-container::after {
+    display: none;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+
+    height: 100vh;
+
+    gap: 30px;
+    padding: 120px 0 0 30px;
+    inset: 0 0 0 30%;
+
+    transform: translateX(100%);
+    transition: transform 0.35s ease-out;
+  }
+
+  .nav-ul.open {
+    transform: translateX(0);
+    transition: transform 0.35s ease-out;
+  }
+
+  .li-link.active,
+  .li-link:hover:not(.active) {
+    border-right: 3px solid;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-right: 38px;
+  }
+}
