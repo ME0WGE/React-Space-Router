@@ -1,6 +1,6 @@
 import Nav from "../../components/header/Nav";
 import { Link } from "react-router-dom";
-import launchImg from "../../assets/technology/image-space-capsule-portrait.jpg";
+import launchImg from "../../assets/technology/portrait/image-space-capsule-portrait.jpg";
 
 export default function Capsule() {
   return (
