@@ -22,6 +22,7 @@ function App() {
       <Routes>
         {/* HOME */}
         <Route path="/" element={<Home />} />
+
         {/* DESTINATION */}
         <Route path="/destination" element={<Destination />}>
           {/* Page de Destination par défaut */}
@@ -31,16 +32,20 @@ function App() {
           <Route path="europa" element={<Europa />} />
           <Route path="titan" element={<Titan />} />
         </Route>
+
         {/* CREW */}
         <Route path="/crew" element={<Crew />}>
+          {/* Page de Crew par défaut */}
           <Route index element={<Commander />} />
           <Route path="commander" element={<Commander />} />
           <Route path="specialist" element={<Specialist />} />
           <Route path="pilot" element={<Pilot />} />
           <Route path="engineer" element={<Engineer />} />
         </Route>
+
         {/* TECHNOLOGY */}
         <Route path="/technology" element={<Technology />}>
+          {/* Page de Technology par défaut */}
           <Route index element={<Launch />} />
           <Route path="launch" element={<Launch />} />
           <Route path="spaceport" element={<Spaceport />} />
