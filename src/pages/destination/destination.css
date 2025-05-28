@@ -69,37 +69,37 @@
 }
 
 /* Moon - tons bleutés glacés */
-.planet-link[href="/destination/moon"]:hover::after {
+.planet-link[href="#/destination/moon"]:hover::after {
   background-color: #d8e7ff;
 }
-.planet-link[href="/destination/moon"].active::after {
+.planet-link[href="#/destination/moon"].active::after {
   width: 100%;
   background-color: #d8e7ff;
 }
 
 /* Mars - tons rougeâtres */
-.planet-link[href="/destination/mars"]:hover::after {
+.planet-link[href="#/destination/mars"]:hover::after {
   background-color: #ff6b6b;
 }
-.planet-link[href="/destination/mars"].active::after {
+.planet-link[href="#/destination/mars"].active::after {
   width: 100%;
   background-color: #ff6b6b;
 }
 
 /* Europa - tons turquoise glacé */
-.planet-link[href="/destination/europa"]:hover::after {
+.planet-link[href="#/destination/europa"]:hover::after {
   background-color: #71f5e8;
 }
-.planet-link[href="/destination/europa"].active::after {
+.planet-link[href="#/destination/europa"].active::after {
   width: 100%;
   background-color: #71f5e8;
 }
 
 /* Titan - tons dorés */
-.planet-link[href="/destination/titan"]:hover::after {
+.planet-link[href="#/destination/titan"]:hover::after {
   background-color: #ffd700;
 }
-.planet-link[href="/destination/titan"].active::after {
+.planet-link[href="#/destination/titan"].active::after {
   width: 100%;
   background-color: #ffd700;
 }

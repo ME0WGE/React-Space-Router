@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <>
       <div className="nav-container">
-        <NavLink to={"/React-Space-Router"}>
+        <NavLink to="/">
           <img src={logo} alt="logo" id="logo" />
         </NavLink>
 
@@ -34,7 +34,7 @@ export default function Nav() {
         <ul className={`nav-ul ${menuOpen ? "open" : ""}`} id="nav-ul">
           <li>
             <NavLink
-              to={"/React-Space-Router"}
+              to="/"
               className={({ isActive }) =>
                 isActive ? "li-link active" : "li-link"
               }
@@ -45,7 +45,7 @@ export default function Nav() {
           </li>
           <li>
             <NavLink
-              to={"/destination"}
+              to="/destination"
               className={({ isActive }) =>
                 isActive ? "li-link active" : "li-link"
               }
@@ -56,7 +56,7 @@ export default function Nav() {
           </li>
           <li>
             <NavLink
-              to={"/crew"}
+              to="/crew"
               className={({ isActive }) =>
                 isActive ? "li-link active" : "li-link"
               }
@@ -67,7 +67,7 @@ export default function Nav() {
           </li>
           <li>
             <NavLink
-              to={"/technology"}
+              to="/technology"
               className={({ isActive }) =>
                 isActive ? "li-link active" : "li-link"
               }
