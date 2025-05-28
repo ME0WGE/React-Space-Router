@@ -1,6 +1,6 @@
 import "./destination.css";
 import Nav from "../../components/header/Nav";
-import moon from "../../assets/destination/image-moon.webp";
+import moon from "../../assets/destination/webp/image-moon.webp";
 import { Link } from "react-router-dom";
 
 export default function Moon() {

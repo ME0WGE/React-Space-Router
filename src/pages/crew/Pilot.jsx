@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Nav from "../../components/header/Nav";
 import "./crew.css";
-import pilotImage from "../../assets/crew/image-victor-glover.webp";
+import pilotImage from "../../assets/crew/webp/image-victor-glover.webp";
 
 export default function Pilot() {
   return (
