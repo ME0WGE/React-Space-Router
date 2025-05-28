@@ -20,7 +20,8 @@
 }
 /* Line between Logo & Navbar */
 .nav-container::after {
-  content: "Made with ❤️ by Kamil Baldyga";
+  /* TODO: copyright */
+  content: "";
   position: absolute;
 
   width: 490px;
@@ -30,18 +31,15 @@
   left: 8%;
 
   background-color: white;
-  /* color: rgba(255, 255, 255, 0.7); */
-  /* color: #71f5e8; */
   color: #936bff9f;
-  /* color: #ffd700; */
 
   font-size: 1rem;
   text-align: center;
 
   margin-top: 0px;
-  /* Ajout d'une bordure légère avec text-shadow */
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
-    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+  /* text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
+    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.3); */
 }
 
 /* Navbar Page List */
