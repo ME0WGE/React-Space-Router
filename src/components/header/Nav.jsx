@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <>
       <div className="nav-container">
-        <NavLink to={"/"}>
+        <NavLink to={"/React-Space-Router"}>
           <img src={logo} alt="logo" id="logo" />
         </NavLink>
 
@@ -34,7 +34,7 @@ export default function Nav() {
         <ul className={`nav-ul ${menuOpen ? "open" : ""}`} id="nav-ul">
           <li>
             <NavLink
-              to={"/"}
+              to={"/React-Space-Router"}
               className={({ isActive }) =>
                 isActive ? "li-link active" : "li-link"
               }
