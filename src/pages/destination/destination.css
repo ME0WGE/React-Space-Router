@@ -171,3 +171,153 @@
 [data-value="titan"] {
   color: #ffd700;
 }
+
+/* Media Queries */
+@media (max-width: 1440px) {
+  /* -- TABLET -- */
+  .destination-container {
+    background-image: url("../../assets/destination/tablet/background-destination-tablet.jpg");
+  }
+
+  .destination-title {
+    margin-left: 8%;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .destination-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .destination-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planet-image {
+    width: 400px;
+    height: 400px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .planet-nav {
+    justify-content: center;
+  }
+
+  .planet-info {
+    max-width: 80%;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planet-description {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .planet-stats {
+    justify-content: space-around;
+  }
+
+  .stat-block {
+    text-align: center;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* -- MOBILE -- */
+  .destination-container {
+    background-image: url("../../assets/destination/mobile/background-destination-mobile.jpg");
+  }
+
+  .destination-title {
+    margin-left: 0;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .planet-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .planet-nav {
+    gap: 20px;
+  }
+
+  .planet-link {
+    font-size: 1.2rem;
+  }
+
+  .planet-info {
+    max-width: 90%;
+    font-size: 3rem;
+  }
+
+  .planet-description {
+    margin-bottom: 40px;
+    font-size: 1rem;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .planet-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-block {
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* (-- XS MOBILE --) */
+@media (max-width: 480px) {
+  .destination-title {
+    padding-top: 3rem;
+  }
+
+  .planet-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .planet-nav {
+    gap: 15px;
+  }
+
+  .planet-link {
+    font-size: 1rem;
+  }
+
+  .planet-info {
+    font-size: 2.5rem;
+  }
+
+  .planet-description {
+    font-size: 0.9rem;
+  }
+
+  .stat-title {
+    font-size: 0.8rem;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+}
