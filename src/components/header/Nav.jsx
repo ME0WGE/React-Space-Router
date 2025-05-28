@@ -6,15 +6,10 @@ export default function Nav() {
   return (
     <>
       <div className="nav-container">
-        <a
-          href="https://www.github.com/ME0WGE"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="logo-container"
-        >
+        <NavLink to={"/"}>
           <img src={logo} alt="logo" id="logo" />
           {/* <span className="logo-tooltip">Made with ❤️ by Kamil Baldyga</span> */}
-        </a>
+        </NavLink>
         <ul className="nav-ul">
           <li>
             <NavLink
