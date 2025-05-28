@@ -113,19 +113,20 @@
   background-color: white;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1440px) {
   /* -- TABLET -- */
   .crew-container {
     background-image: url("../../assets/crew/tablet/background-crew-tablet.jpg");
   }
-  
+
   .crew-content {
     flex-direction: column;
     height: auto;
     padding: 0 5%;
     align-items: center;
   }
-  
+
   .crew-info {
     width: 80%;
     min-width: auto;
@@ -134,38 +135,38 @@
     text-align: center;
     order: 1;
   }
-  
+
   .crew-title {
     width: 100%;
     text-align: center;
     padding-top: 4rem;
   }
-  
+
   .crew-details {
     margin-top: 40px;
     height: auto;
     align-items: center;
   }
-  
+
   .crew-details h2 {
     font-size: 24px;
   }
-  
+
   .crew-details h3 {
     font-size: 40px;
   }
-  
+
   .crew-bio {
     width: 80%;
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
   .crew-nav {
     justify-content: center;
     margin-bottom: 40px;
   }
-  
+
   .crew-image {
     width: 60%;
     height: 450px;
@@ -173,7 +174,7 @@
     align-self: center;
     order: 2;
   }
-  
+
   .crew-image img {
     height: 100%;
   }
@@ -184,16 +185,16 @@
   .crew-container {
     background-image: url("../../assets/crew/mobile/background-crew-mobile.jpg");
   }
-  
+
   .crew-content {
     flex-direction: column-reverse;
   }
-  
+
   .crew-info {
     width: 95%;
     order: 2;
   }
-  
+
   .crew-image {
     width: 80%;
     height: 320px;
@@ -201,28 +202,28 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 0;
   }
-  
+
   .crew-title {
     padding-top: 2.5rem;
   }
-  
+
   .crew-title > h1 {
     font-size: 1.25rem;
   }
-  
+
   .crew-details {
     margin-top: 20px;
   }
-  
+
   .crew-details h2 {
     font-size: 18px;
   }
-  
+
   .crew-details h3 {
     font-size: 28px;
     margin-bottom: 15px;
   }
-  
+
   .crew-bio {
     width: 90%;
     height: auto;
@@ -231,12 +232,12 @@
     margin-bottom: 30px;
     font-size: 0.9rem;
   }
-  
+
   .crew-dot {
     width: 12px;
     height: 12px;
   }
-  
+
   .crew-nav {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -248,28 +249,28 @@
   .crew-image {
     height: 250px;
   }
-  
+
   .crew-title {
     padding-top: 1.5rem;
   }
-  
+
   .crew-title > h1 {
     font-size: 1rem;
   }
-  
+
   .crew-details h2 {
     font-size: 16px;
   }
-  
+
   .crew-details h3 {
     font-size: 24px;
   }
-  
+
   .crew-bio {
     font-size: 0.85rem;
     max-height: 100px;
   }
-  
+
   .crew-dot {
     width: 10px;
     height: 10px;
