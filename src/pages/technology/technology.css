@@ -100,3 +100,167 @@
 .technology-image img {
   height: 550px;
 }
+
+/* Media Queries */
+@media (max-width: 1440px) {
+  /* -- TABLET -- */
+  .technology-container {
+    background-image: url("../../assets/technology/tablet/background-technology-tablet.jpg");
+  }
+  
+  .technology-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .technology-title h1 {
+    margin-left: 5%;
+    font-size: calc(var(--font-size-title) - 4px);
+  }
+  
+  .technology-info {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    margin-top: 40px;
+  }
+  
+  .technology-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tech-number {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .technology-text {
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .technology-image {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .technology-image img {
+    height: auto;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  
+  .technology-text h2 {
+    font-size: 40px;
+    margin: 10px 0 20px;
+  }
+  
+  .description {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* -- MOBILE -- */
+  .technology-container {
+    background-image: url("../../assets/technology/mobile/background-technology-mobile.jpg");
+  }
+  
+  .technology-title {
+    padding-top: 3rem;
+  }
+  
+  .technology-title h1 {
+    font-size: calc(var(--font-size-title) - 8px);
+    text-align: center;
+    margin-left: 0;
+    letter-spacing: 3px;
+  }
+  
+  .technology-content {
+    margin-top: 30px;
+  }
+  
+  .technology-main {
+    margin-top: var(--spacing-small);
+  }
+  
+  .technology-info {
+    margin-top: 20px;
+    gap: var(--spacing-small);
+  }
+  
+  .tech-number {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .technology-nav {
+    gap: 15px;
+  }
+  
+  .technology-text {
+    max-width: 90%;
+  }
+  
+  .terminology {
+    font-size: 14px;
+  }
+  
+  .technology-text h2 {
+    font-size: 32px;
+    margin: 8px 0 16px;
+  }
+  
+  .description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .technology-image img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* -- XS MOBILE -- */
+  .technology-title h1 {
+    font-size: calc(var(--font-size-title) - 10px);
+  }
+  
+  .tech-number {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .technology-nav {
+    gap: 12px;
+  }
+  
+  .technology-text h2 {
+    font-size: 28px;
+  }
+  
+  .terminology {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+  
+  .technology-image img {
+    max-height: 200px;
+  }
+}
