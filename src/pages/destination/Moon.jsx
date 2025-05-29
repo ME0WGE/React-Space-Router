@@ -21,6 +21,9 @@ export default function Moon() {
           <img src={moon} alt="image of the Moon" className="planet-image" />
           <div className="destination-selection">
             <ul className="planet-nav">
+
+              
+
               <li>
                 <Link to={"/destination/moon"} className="planet-link active">
                   MOON
