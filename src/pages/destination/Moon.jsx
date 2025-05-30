@@ -2,9 +2,8 @@ import "./destination.css";
 import Nav from "../../components/header/Nav";
 import moon from "../../assets/destination/webp/image-moon.webp";
 import { Link } from "react-router-dom";
-import destination from "../../data/destination.json";
 
-export default function Moon() {
+export default function Moon({planetActive, planet}) {
   return (
     <div className="destination-container">
       {/* Display Navbar */}
@@ -21,22 +20,19 @@ export default function Moon() {
           <img src={moon} alt="image of the Moon" className="planet-image" />
           <div className="destination-selection">
             <ul className="planet-nav">
-
-              
-
               <li>
                 <Link to={"/destination/moon"} className="planet-link active">
-                  MOON
+                  {planetActive}
                 </Link>
               </li>
               <li>
                 <Link to={"/destination/mars"} className="planet-link">
-                  MARS
+                  {planet}
                 </Link>
               </li>
               <li>
                 <Link to={"/destination/europa"} className="planet-link">
-                  EUROPA
+                  {planet}
                 </Link>
               </li>
               <li>
